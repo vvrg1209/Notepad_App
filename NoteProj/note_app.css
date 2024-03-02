@@ -1,0 +1,102 @@
+body {
+    background: url(https://res.cloudinary.com/drcrre4xg/image/upload/v1578327067/bg_ajy0uu.jpg)
+      no-repeat center;
+    background-size: cover;
+    min-height: 100vh;
+    /* display: flex; */
+    /* align-items: center; */
+    /* justify-content: center; */
+  }
+
+input[type=button] {
+    background-color: #0693cd;
+    border: 0;
+    border-radius: 4px;
+    cursor: pointer;
+    color: #fff;
+    font-size:16px;
+    font-weight: bold;
+    line-height: 1.4;
+    padding: 8px;
+    width: 100px
+  }
+
+input[type=reset] {
+    background-color: #0693cd;
+    border: 0;
+    border-radius: 4px;
+    cursor: pointer;
+    color: #fff;
+    font-size:16px;
+    font-weight: bold;
+    line-height: 1.4;
+    padding: 8px;
+    width: 100px
+  }
+#logoutbutton{
+  background-color: #0693cd;
+    border: 0;
+    border-radius: 4px;
+    cursor: pointer;
+    color: #fff;
+    font-size:16px;
+    font-weight: bold;
+    line-height: 1.4;
+    padding: 8px;
+    width: 100px
+}
+
+h3{
+  color: rgb(236, 120, 11);} 
+
+div.xyz{
+  text-transform: uppercase;
+}
+
+#msg{
+  color: rgb(30, 6, 243);
+}
+
+table{
+  width: 60%;
+  font-size:22px;
+}
+
+button{
+  background-color: #0693cd;
+    border: 0;
+    border-radius: 4px;
+    cursor: pointer;
+    color: #fff;
+    font-size:16px;
+    font-weight: bold;
+    line-height: 1.4;
+    padding: 8px;
+    width: 100px
+}
+
+.col{
+  font-size:20px;
+    font-weight: bold;
+    padding: 8px;
+    width: 100px
+}
+td{
+  text-align: center;
+}
+fieldset {
+  padding: 15px;
+  color: rgb(17, 17, 17);
+  border-color: rgb(70, 95, 235);
+  border: 5;
+}
+
+#desc{
+  font-family: 'Comic Sans MS', cursive;
+  font-size:18px;
+}
+
+#title{
+  font-family: 'Comic Sans MS', cursive;
+  font-size:18px;
+}

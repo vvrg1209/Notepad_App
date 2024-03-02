@@ -1,0 +1,43 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registration Form</title>
+    <link rel="stylesheet" href="login.css">
+</head>
+<body>
+    <h1>NOTEPAD APP</h1>
+    <div class="container">
+    <fieldset>
+        <legend><h1>Please Register Here</h1></legend>
+        <form action="#">
+            <h6>Enter Name: <input type="name" placeholder="Name" id="name"></h6><br><br>
+            <h6>Enter Email: <input type="email" id="email" placeholder="abc@gmail.com"></h6><br><br>
+            <h6>Enter Password: <input type="password" id="password"></h6><br><br>
+            <!-- <h3><div id="msg"></div></h3> -->
+            <h6><button onclick="Submit()">REGISTER</button></h6>
+            <!-- <h6><button onclick="Singin()">SIGN-IN</button><br><br></h6> -->
+            <h6 style="color:#0693cd">Back To : <a href="note_pad_login.html" style="color:#0693cd">Login Page</a></h6>
+        </fieldset>
+    </div>
+    <script>
+        function Submit(){
+            let name=document.getElementById("name").value;
+            let email=document.getElementById("email").value;
+            let password=document.getElementById("password").value;
+            
+            let user_records=new Array();
+            user_records=JSON.parse(localStorage.getItem("users"))?JSON.parse(localStorage.getItem("users")):[]
+            if(user_records.some((v)=>{return v.email==email})){
+                alert("duplicate title")
+            }
+            else{
+                user_records.push({"name":name,"email":email,"password":password})
+                localStorage.setItem("users",JSON.stringify(user_records))
+                alert("Registred Sucessfully")
+            }
+        }
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,40 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login Form</title>
+    <link rel="stylesheet" href="login.css">
+</head>
+<body>
+    <fieldset>
+<form action="">
+    <legend><h1>SIGN-IN TO NOTEPAD APP</h1></legend>
+    <h5>Enter E-Mail Id:<input type="email" id="email"></h5><br>
+    <h5>Enter The Password:<input type="password" id="password"></h5><br>
+    <h5><input type="button" onclick="Submit()" value="SIGN-IN"></h5>
+    <h5><input type="button" onclick="Singnup()" value="SIGN-UP"></h5>
+</form>
+</fieldset>
+</body>
+<script>
+function Submit(){
+    let email=document.getElementById("email").value;
+    let password=document.getElementById("password").value;
+    let user_record=new Array();
+    user_record=JSON.parse(localStorage.getItem("users"))?JSON.parse(localStorage.getItem("users")):[]
+    if (user_record.some((v)=>{return v.email==email && v.password==password})){
+    alert("Login Sucess")
+    let current_user=user_record.filter((v)=>{return v.email==email && v.password==password})[0]
+    localStorage.setItem("name",current_user.name)
+    localStorage.setItem("email",current_user.email)
+    window.location.href="note_pad_home.html";
+}
+    else{
+        alert("If you are new user please register or May be Incorrect password or login")
+    }
+    }
+function Singnup(){
+    window.location.href="note_pad_register.html"
+    }
+</script>
+</html>

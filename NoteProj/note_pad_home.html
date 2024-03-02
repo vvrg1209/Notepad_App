@@ -1,0 +1,41 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Note Pad</title>
+    <link rel="stylesheet" href="note_app.css">
+</head>
+<body>
+    <p align="right">
+        <input type="button" value="Logout" onclick="logout()"/>
+      </p>
+    <div class="xyz"><h3><script>
+        document.write("HELLO  ")
+        document.write(localStorage.getItem('name'))
+    </script></h3></div>
+    <fieldset>
+    <legend><h2>NOTEPAD</h2></legend>
+    <form action="" id="form">
+        <h4>TITLE</h4>
+        <textarea rows="4" cols="50" id="title" name="title"></textarea><br><br>
+        <h4>DESCRIPTION</h4>
+        <textarea rows="19" cols="50" id="desc" name="desc" place="description"></textarea><br><br><br>
+        <input type="button" value="SUBMIT" id="btn" onclick="Submit()">
+        <input type="reset" value="RESET"><br>
+    </form>
+</fieldset><br>
+<div id="msg"><br></div>
+<fieldset>
+    <br>
+    <legend><h2>SAVED NOTES</h2></legend>
+    <table border="2" id="table" class="table" border=9px cellspacing='9' cellpadding='9' bordercolor='purple'>
+    <tr>
+        <th class="col">TITLE</th>
+        <th class="col">DESCRIPTION</th>
+        <th class="col">ACTION</th>
+    </tr>
+    </table>
+</fieldset>
+</body>
+<script src="note_pad_js.js"></script>
+</html>

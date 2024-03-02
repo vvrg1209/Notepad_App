@@ -1,0 +1,75 @@
+/* body{
+    background: #db7fe4;
+    font-family: "Poppins",sans-serif;
+} */
+/* body{
+    background: -webkit-linear-gradient(left, #25c481, #25b7c4);
+    background: linear-gradient(to right, #25c481, #25b7c4);
+    font-family: 'Roboto', sans-serif;
+  } */
+h1{
+    font-size: 30px;
+    color: #fff;
+    text-transform: uppercase;
+    font-weight: 300;
+    text-align: center;
+    margin-bottom: 15px;
+  }
+body{
+    /* background: url(https://res.cloudinary.com/drcrre4xg/image/upload/v1572142950/bg_k00qm0.png) no-repeat center; */
+background: url(https://res.cloudinary.com/drcrre4xg/image/upload/v1578584481/bg_mcnuhk.jpg) center no-repeat;
+  background-size: cover;
+  padding: 40px 0;
+}
+h5{
+    font-size: 14px;
+    color: #dfddca;
+    text-transform: uppercase;
+    font-weight: 300;
+    text-align: center;
+    margin-bottom: 15px;
+  }
+
+a{
+    font-size: 14px;
+    color: #dfddca;
+    text-transform: uppercase;
+    /* font-weight: 300; */
+    text-align: center;
+    margin-bottom: 15px;  
+}
+h6{
+    font-size: 14px;
+    color:  #dfddca;
+    text-transform: uppercase;
+    /* font-weight: 300; */
+    text-align: left;
+    margin-bottom: 2px;
+  }
+  
+  input[type=button] {
+    background-color: #0693cd;
+    border: 0;
+    border-radius: 4px;
+    cursor: pointer;
+    color: #fff;
+    font-size:16px;
+    font-weight: bold;
+    line-height: 1.4;
+    padding: 8px;
+    width: 100px
+  }
+  button{
+    background-color: #0693cd;
+      border: 0;
+      border-radius: 4px;
+      cursor: pointer;
+      color: #fff;
+      font-size:16px;
+      font-weight: bold;
+      line-height: 1.4;
+      padding: 8px;
+      width: 100px
+  }
+
+  
